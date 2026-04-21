@@ -60,3 +60,8 @@ omg build [targetPath]
 # 构建指定目录的代码 匹配方式 js/*.(js|jsx)
 omg build [targetPath] [targetDir]
 ```
+
+升级V2.0.0
+```Shell
+npm install -g omg-rc-cli@2.0.0
+```
