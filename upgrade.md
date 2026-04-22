@@ -47,7 +47,18 @@ git status
 
 > **原因**：omg-rc-cli v2.0 内部 Babel 升级到了 7.26+，运行时依赖 `@babel/runtime-corejs3` 需同步更新，否则 CLI 启动时会自动尝试安装并报错。
 
-#### 1.2 移除 `dependencies` 中重复的 `http-proxy-middleware`
+#### 1.2 添加 `ajv@^8.18.0`
+
+在 `dependencies` 中添加：
+
+```diff
+  "dependencies": {
++   "ajv": "^8.18.0",
+```
+
+> **原因**：omg-rc-cli v2.0 使用的 `babel-loader@9` → `schema-utils@4` → `ajv-keywords@5` 需要 `ajv@^8`。如果项目中有旧依赖（如 `eslint@4`）把 `ajv@5` 提升到了 `node_modules` 顶层，会导致 `ajv-keywords@5` 找到错误版本而报 `Cannot find module 'ajv/dist/compile/codegen'` 错误。显式声明 `ajv@^8` 可确保正确版本被提升到顶层。
+
+#### 1.3 移除 `dependencies` 中重复的 `http-proxy-middleware`
 
 检查你的 `package.json`，如果 `http-proxy-middleware` 同时出现在 `dependencies` 和 `devDependencies` 中：
 
@@ -66,7 +77,7 @@ git status
 - 仅保留在 `devDependencies` 中即可，版本使用 `^2.0.9`（与项目代码中 `createProxyMiddleware` API 兼容）
 - 如果原来只在 `devDependencies` 中有，则无需操作
 
-#### 1.3 升级 omg-rc-cli
+#### 1.4 升级 omg-rc-cli
 
 ```diff
   "devDependencies": {
@@ -183,6 +194,24 @@ npm warn peer react@"^15" from react-router@4.1.1
 ```
 
 **说明**：这是旧项目中 `react-router@4` 与 `react@16` 的已知兼容性警告，不影响功能。使用 `--legacy-peer-deps` 安装即可忽略。
+
+### Q5：启动时报 `Cannot find module 'ajv/dist/compile/codegen'`
+
+```
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- .../node_modules/ajv-keywords/dist/definitions/typeof.js
+```
+
+**原因**：项目中旧依赖（如 `eslint@4`）将 `ajv@5` 提升到了 `node_modules` 顶层，而 `ajv-keywords@5`（来自 `schema-utils@4`）需要 `ajv@^8`。`ajv@5` 中没有 `dist/compile/codegen` 模块。
+
+**解决**：在 `package.json` 的 `dependencies` 中显式添加 `"ajv": "^8.18.0"`，确保 `ajv@8` 被提升到顶层。
+
+**依赖链**：
+```
+commitcheck@1.1.6 → eslint@4.19.1 → ajv@5（被提升到顶层，导致冲突）
+omg-rc-cli@2.0.0 → babel-loader@9 → schema-utils@4 → ajv-keywords@5 → 需要 ajv@^8
+```
 
 ---
 
