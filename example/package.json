@@ -26,8 +26,8 @@
     "zzc-design-mobile": "^3.5.7"
   },
   "devDependencies": {
-    "@babel/runtime-corejs3": "^7.9.2",
+    "@babel/runtime-corejs3": "^7.29.2",
     "axios": "^0.19.2",
-    "node-sass": "^4.12.0"
+    "sass": "^1.83.0"
   }
 }

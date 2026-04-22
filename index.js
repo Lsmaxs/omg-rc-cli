@@ -1,4 +1,4 @@
-const program = require( 'commander' );
+const { program } = require( 'commander' );
 const pkg = require( './package.json' );
 const logoOutput = require( './lib/extension/logo/logo' );
 const createDir = require( './lib/script/create' );

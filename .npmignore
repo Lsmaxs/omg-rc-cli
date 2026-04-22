@@ -8,4 +8,5 @@ package-lock.json
 /example/
 /page/
 /page_server/
+/upgradePlan/
 .gitignore
