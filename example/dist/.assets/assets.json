@@ -1,82 +1,218 @@
 {
 	"css-example": [
-		"css/css-example.css",
-		"js/css-example.js"
+		{
+			"name": "css/css-example-cf159c78.css",
+			"size": 591
+		},
+		{
+			"name": "js/css-example-cf159c78.js",
+			"size": 4335
+		}
 	],
 	"es-es5-example": [
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"js/es-es5-example.js"
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/es-es5-example-f7a2eb1e.js",
+			"size": 25323
+		}
 	],
 	"font-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/font-example.css",
-		"js/font-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "css/font-example-3f1b67ed.css",
+			"size": 1412
+		},
+		{
+			"name": "js/font-example-3f1b67ed.js",
+			"size": 6224
+		}
 	],
 	"handlebars-example": [
-		"js/handlebars-example.js"
+		{
+			"name": "js/handlebars-example-4a48ce7f.js",
+			"size": 17586
+		}
 	],
 	"hot-react-example": [
-		"js/react-runtime.chunk.js",
-		"css/hot-react-example.css",
-		"js/hot-react-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "css/hot-react-example-8d62481b.css",
+			"size": 13
+		},
+		{
+			"name": "js/hot-react-example-8d62481b.js",
+			"size": 1717
+		}
 	],
 	"html-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"js/html-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/html-example-eb4135a8.js",
+			"size": 1160
+		}
 	],
 	"images-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/images-example.css",
-		"js/images-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "css/images-example-2f03ab40.css",
+			"size": 52595
+		},
+		{
+			"name": "js/images-example-2f03ab40.js",
+			"size": 10723
+		}
 	],
 	"jsinline-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/vendors~jsinline-exam~cd4ba72c.chunk.css",
-		"js/vendors~jsinline-exam~cd4ba72c.chunk.js",
-		"js/jsinline-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/487-cd0db1a5.js",
+			"size": 30814
+		},
+		{
+			"name": "css/jsinline-example-4d341e56.css",
+			"size": 13915
+		},
+		{
+			"name": "js/jsinline-example-4d341e56.js",
+			"size": 2063
+		}
 	],
 	"lazy-load-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"js/lazy-load-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/lazy-load-example-9d56230e.js",
+			"size": 9290
+		}
 	],
 	"react-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/vendors~jsinline-exam~cd4ba72c.chunk.css",
-		"js/vendors~jsinline-exam~cd4ba72c.chunk.js",
-		"css/react-example.css",
-		"js/react-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/487-cd0db1a5.js",
+			"size": 30814
+		},
+		{
+			"name": "css/react-example-d6f0f67d.css",
+			"size": 13915
+		},
+		{
+			"name": "js/react-example-d6f0f67d.js",
+			"size": 2015
+		}
 	],
 	"scss-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/vendors~jsinline-exam~cd4ba72c.chunk.css",
-		"js/vendors~jsinline-exam~cd4ba72c.chunk.js",
-		"css/scss-example.css",
-		"js/scss-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/487-cd0db1a5.js",
+			"size": 30814
+		},
+		{
+			"name": "css/scss-example-7426df9f.css",
+			"size": 14549
+		},
+		{
+			"name": "js/scss-example-7426df9f.js",
+			"size": 5908
+		}
 	],
 	"svg-example": [
-		"js/react-runtime.chunk.js",
-		"js/vendors~es-es5-exampl~3c1b604e.chunk.js",
-		"css/svg-example.css",
-		"js/svg-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "css/svg-example-9d4ab141.css",
+			"size": 312
+		},
+		{
+			"name": "js/svg-example-9d4ab141.js",
+			"size": 20928
+		}
 	],
 	"tree-shaking": [
-		"js/tree-shaking.js"
+		{
+			"name": "js/866-4d4de39a.js",
+			"size": 33764
+		},
+		{
+			"name": "js/tree-shaking-ea2e5417.js",
+			"size": 1922
+		}
 	],
 	"ts-js-example": [
-		"js/ts-js-example.js"
+		{
+			"name": "js/ts-js-example-9075b492.js",
+			"size": 0
+		}
 	],
 	"tsx-js-example": [
-		"js/react-runtime.chunk.js",
-		"js/tsx-js-example.js"
+		{
+			"name": "js/react-runtime-1317720b.js",
+			"size": 130199
+		},
+		{
+			"name": "js/tsx-js-example-864bba06.js",
+			"size": 1349
+		}
 	],
 	"eaentry": [
-		"js/eaentry.js"
+		{
+			"name": "js/eaentry-965c5cb7.js",
+			"size": 949
+		}
 	]
 }
