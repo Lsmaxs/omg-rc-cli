@@ -6,6 +6,7 @@
   "scripts": {
     "create": "omg create ./src createDir",
     "build": "omg build",
+    "publish": "omg publish",
     "node_build": "node nodeApi.js"
   },
   "author": "",
