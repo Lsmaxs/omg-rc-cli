@@ -2,6 +2,7 @@
 
 > 适用对象：使用 omg-rc-cli 的业务项目开发者
 > 最后更新：2026-04-22
+> CLI 最新版本：**2.0.1**
 
 ---
 
@@ -82,7 +83,7 @@ git status
 ```diff
   "devDependencies": {
 -   "omg-rc-cli": "^1.x.x",
-+   "omg-rc-cli": "^2.0.0"
++   "omg-rc-cli": "^2.0.1"
   }
 ```
 
@@ -117,7 +118,55 @@ omg server ./ mainRental --env.workingSpace=mainRental
 
 ---
 
-## 三、omg.config.js 兼容性说明
+## 三、清理编译缓存
+
+omg-rc-cli v2.0 使用 Webpack 5 持久化缓存（`type: 'filesystem'`），缓存存储在项目 `node_modules/.cache/` 目录下。当遇到以下情况时需要清理缓存：
+
+- 升级 omg-rc-cli 版本后编译结果不正确
+- 修改了 webpack 或 loader 配置后行为未更新
+- 出现不明原因的编译错误或运行时错误
+
+### 按需清理
+
+```bash
+# 清理指定 workingSpace 的编译缓存
+rm -rf node_modules/.cache/<workingSpace>
+
+# 例如清理 mainRental
+rm -rf node_modules/.cache/mainRental
+```
+
+### 全量清理
+
+```bash
+# 清理所有 workingSpace 的编译缓存
+rm -rf node_modules/.cache
+```
+
+### 完全重置（终极方案）
+
+当按需清理无效时，彻底重置依赖和缓存：
+
+```bash
+# 1. 停止 dev server（Ctrl+C）
+
+# 2. 删除依赖、缓存、产物
+rm -rf node_modules package-lock.json node_modules/.cache
+
+# 3. 重新安装
+npm install --legacy-peer-deps
+
+# 4. 重新启动
+omg server ./ mainRental --env.workingSpace=mainRental
+```
+
+### 浏览器缓存
+
+浏览器也可能缓存旧的 JS bundle。如果清理了编译缓存后浏览器中仍有问题，使用 `Cmd + Shift + R`（Mac）或 `Ctrl + Shift + R`（Windows）强制刷新。
+
+---
+
+## 四、omg.config.js 兼容性说明
 
 **无需修改 `omg.config.js`。** omg-rc-cli v2.0 已内置向后兼容处理。
 
@@ -150,7 +199,7 @@ devServer: {
 
 ---
 
-## 四、常见问题排查
+## 五、常见问题排查
 
 ### Q1：启动时报 `@babel/runtime-corejs3 Version is not consistent`
 
@@ -213,9 +262,87 @@ commitcheck@1.1.6 → eslint@4.19.1 → ajv@5（被提升到顶层，导致冲�
 omg-rc-cli@2.0.0 → babel-loader@9 → schema-utils@4 → ajv-keywords@5 → 需要 ajv@^8
 ```
 
+### Q6：启动时报 `TypeError: callback is not a function`
+
+```
+TypeError: callback is not a function
+    at .../webpack-dev-server/lib/Server.js:3403:19
+```
+
+**原因**：omg-rc-cli@2.0.0 中 `server.startCallback(port, host, callback)` 使用了 v3 的调用方式，但 webpack-dev-server v4 的 `startCallback` 只接受一个 callback 参数。
+
+**解决**：升级到 **omg-rc-cli@2.0.1**，此版本已修复 `startCallback` 调用方式。
+
+### Q7：浏览器运行时报 `Cannot read properties of undefined (reading 'xxx')`，使用 CSS Modules 时 `styles` 为 `undefined`
+
+```
+Uncaught TypeError: Cannot read properties of undefined (reading 'filter-fast-content')
+    at FastFilterLayout.render (index.jsx:55:1)
+```
+
+```javascript
+import styles from './style.module.scss';
+// styles 为 undefined
+```
+
+**原因**：css-loader@7 配合 style-loader@4 时，CSS Modules 的 `locals` 导出格式不兼容。css-loader@7 的 `esModule: true`（默认）将 `.locals` 设置在内部 `___CSS_LOADER_EXPORT___` 对象上，但 default export 导出的是另一个纯映射对象（不带 `.locals`）。style-loader@4 通过 `content.locals` 取值时拿到 `undefined`，导致 `import styles from '...'` 为 `undefined`。
+
+**解决**：升级到 **omg-rc-cli@2.0.1**，此版本已将 CSS Modules 的 css-loader 设为 `esModule: false`，使 `.locals` 正确挂载在导出对象上。
+
+**技术细节**：
+
+```
+loader 链: style-loader@4 → css-loader@7 → postcss-loader → sass-loader
+
+css-loader@7 esModule: true (默认) → ❌
+  内部: ___CSS_LOADER_EXPORT___.locals = { "filter-fast-content": "..." }
+  导出: export default { "filter-fast-content": "..." }  ← 纯映射对象，没有 .locals
+  style-loader: content = default export → content.locals = undefined → 导出 undefined
+
+css-loader@7 esModule: false (修复后) → ✅
+  内部: ___CSS_LOADER_EXPORT___.locals = { "filter-fast-content": "..." }
+  导出: module.exports = ___CSS_LOADER_EXPORT___  ← 导出带 .locals 的完整对象
+  style-loader: content.locals = { "filter-fast-content": "..." } → ✅
+```
+
 ---
 
-## 五、各 workingSpace 升级检查清单
+## 六、本地 Link 测试（官方源未更新时）
+
+如果 npm registry 尚未同步最新版本，可通过 `npm link` 使用本地 git 仓库进行测试：
+
+```bash
+# 1. 在 omg-rc-cli 仓库目录建立全局 link
+cd /path/to/omg-rc-cli
+npm link
+
+# 2. 在业务项目中 link 到本地仓库
+cd /path/to/your-project
+npm link omg-rc-cli --legacy-peer-deps
+```
+
+验证 link 是否生效：
+
+```bash
+ls -la node_modules/omg-rc-cli
+# 应显示 symlink 指向本地仓库路径
+
+omg --version
+# 应显示 2.0.1
+```
+
+> **注意**：link 后对 omg-rc-cli 的任何修改会立即生效，无需重新安装。
+
+官方源更新后，取消 link 并安装 registry 版本：
+
+```bash
+npm unlink omg-rc-cli
+npm install --legacy-peer-deps
+```
+
+---
+
+## 七、各 workingSpace 升级检查清单
 
 `book_m_frontend/rental` 项目包含多个 workingSpace，逐一确认：
 
@@ -230,7 +357,7 @@ omg-rc-cli@2.0.0 → babel-loader@9 → schema-utils@4 → ajv-keywords@5 → �
 
 ---
 
-## 六、升级后的变更
+## 八、升级后的变更
 
 升级到 omg-rc-cli v2.0 后，你将获得：
 

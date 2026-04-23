@@ -7,11 +7,15 @@ import Button from 'zzc-design-mobile/lib/Button';
 
 class App extends Component {
     render () {
+        console.log( "styles", styles );
         return (
             <div>
-                <h1>OMG-CLI</h1>
+                <h1 className={'mmd'}>OMG-CLI</h1>
                 <Button>111143334</Button>
-                <p className={styles['class-name1']}>this is text</p>
+                <p className={styles['md-77']}>this is text</p>
+                <p className={styles.className1}>this is text</p>
+                <p className={styles.md77}>this is text</p>
+               
             </div>
         )
     }

@@ -1,218 +1,318 @@
 {
 	"css-example": [
 		{
-			"name": "css/css-example-cf159c78.css",
-			"size": 591
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/css-example-cf159c78.js",
-			"size": 4335
+			"name": "js/css-example.js",
+			"size": 118940
+		},
+		{
+			"name": "css-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 850
 		}
 	],
 	"es-es5-example": [
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/es-es5-example-f7a2eb1e.js",
-			"size": 25323
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
+		},
+		{
+			"name": "js/es-es5-example.js",
+			"size": 335953
+		},
+		{
+			"name": "es-es5-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 853
 		}
 	],
 	"font-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "css/font-example-3f1b67ed.css",
-			"size": 1412
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "js/font-example-3f1b67ed.js",
-			"size": 6224
+			"name": "js/font-example.js",
+			"size": 184330
+		},
+		{
+			"name": "font-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 851
 		}
 	],
 	"handlebars-example": [
 		{
-			"name": "js/handlebars-example-4a48ce7f.js",
-			"size": 17586
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
+		},
+		{
+			"name": "js/handlebars-example.js",
+			"size": 387697
+		},
+		{
+			"name": "handlebars-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 857
 		}
 	],
 	"hot-react-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "css/hot-react-example-8d62481b.css",
-			"size": 13
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "js/hot-react-example-8d62481b.js",
-			"size": 1717
+			"name": "js/hot-react-example.js",
+			"size": 209525
+		},
+		{
+			"name": "hot-react-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 856
 		}
 	],
 	"html-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/html-example-eb4135a8.js",
-			"size": 1160
+			"name": "js/react-runtime.js",
+			"size": 3143520
+		},
+		{
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
+		},
+		{
+			"name": "js/html-example.js",
+			"size": 116569
+		},
+		{
+			"name": "html-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 851
 		}
 	],
 	"images-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "css/images-example-2f03ab40.css",
-			"size": 52595
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "js/images-example-2f03ab40.js",
-			"size": 10723
+			"name": "js/images-example.js",
+			"size": 238212
+		},
+		{
+			"name": "images-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 853
 		}
 	],
 	"jsinline-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "js/487-cd0db1a5.js",
-			"size": 30814
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "css/jsinline-example-4d341e56.css",
-			"size": 13915
+			"name": "js/vendors-node_modules_zzc-design-mobile_lib_Button_index_js-node_modules_babel_runtime-corejs3-6088c3.js",
+			"size": 454311
 		},
 		{
-			"name": "js/jsinline-example-4d341e56.js",
-			"size": 2063
+			"name": "js/jsinline-example.js",
+			"size": 62124
+		},
+		{
+			"name": "jsinline-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 855
 		}
 	],
 	"lazy-load-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "js/lazy-load-example-9d56230e.js",
-			"size": 9290
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
+		},
+		{
+			"name": "js/lazy-load-example.js",
+			"size": 125329
+		},
+		{
+			"name": "lazy-load-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 856
 		}
 	],
 	"react-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "js/487-cd0db1a5.js",
-			"size": 30814
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "css/react-example-d6f0f67d.css",
-			"size": 13915
+			"name": "js/vendors-node_modules_zzc-design-mobile_lib_Button_index_js-node_modules_babel_runtime-corejs3-6088c3.js",
+			"size": 454311
 		},
 		{
-			"name": "js/react-example-d6f0f67d.js",
-			"size": 2015
+			"name": "js/react-example.js",
+			"size": 61535
+		},
+		{
+			"name": "react-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 852
 		}
 	],
 	"scss-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "js/487-cd0db1a5.js",
-			"size": 30814
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "css/scss-example-7426df9f.css",
-			"size": 14549
+			"name": "js/vendors-node_modules_zzc-design-mobile_lib_Button_index_js-node_modules_babel_runtime-corejs3-6088c3.js",
+			"size": 454311
 		},
 		{
-			"name": "js/scss-example-7426df9f.js",
-			"size": 5908
+			"name": "js/scss-example.js",
+			"size": 107292
+		},
+		{
+			"name": "scss-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 11147
 		}
 	],
 	"svg-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/react-runtime.js",
+			"size": 3143520
 		},
 		{
-			"name": "css/svg-example-9d4ab141.css",
-			"size": 312
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
 		},
 		{
-			"name": "js/svg-example-9d4ab141.js",
-			"size": 20928
+			"name": "js/svg-example.js",
+			"size": 281996
+		},
+		{
+			"name": "svg-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 850
 		}
 	],
 	"tree-shaking": [
 		{
-			"name": "js/866-4d4de39a.js",
-			"size": 33764
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/tree-shaking-ea2e5417.js",
-			"size": 1922
+			"name": "js/vendors-node_modules_babel_runtime-corejs3_helpers_esm_classCallCheck_js-node_modules_babel_r-9723d4.js",
+			"size": 428617
+		},
+		{
+			"name": "js/tree-shaking.js",
+			"size": 57692
+		},
+		{
+			"name": "tree-shaking.f530ce9ac042b295bed5.hot-update.js",
+			"size": 851
 		}
 	],
 	"ts-js-example": [
 		{
-			"name": "js/ts-js-example-9075b492.js",
-			"size": 0
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
+		},
+		{
+			"name": "js/ts-js-example.js",
+			"size": 52946
+		},
+		{
+			"name": "ts-js-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 852
 		}
 	],
 	"tsx-js-example": [
 		{
-			"name": "js/react-runtime-1317720b.js",
-			"size": 130199
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
 		},
 		{
-			"name": "js/tsx-js-example-864bba06.js",
-			"size": 1349
+			"name": "js/react-runtime.js",
+			"size": 3143520
+		},
+		{
+			"name": "js/tsx-js-example.js",
+			"size": 52322
+		},
+		{
+			"name": "tsx-js-example.f530ce9ac042b295bed5.hot-update.js",
+			"size": 853
 		}
 	],
 	"eaentry": [
 		{
-			"name": "js/eaentry-965c5cb7.js",
-			"size": 949
+			"name": "js/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_0_0_0_0_port_-5a9424.js",
+			"size": 373205
+		},
+		{
+			"name": "js/eaentry.js",
+			"size": 53128
+		},
+		{
+			"name": "eaentry.f530ce9ac042b295bed5.hot-update.js",
+			"size": 846
 		}
 	]
 }

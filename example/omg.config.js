@@ -50,8 +50,12 @@ module.exports = (env) => {
                     let html = await readHtml( 'react-example' );
                     res.send( html );
                 } );
+                app.get( '/scss-example', async function ( req, res ) {
+                    let html = await readHtml( 'scss-example' );
+                    res.send( html );
+                } );
             },
-            port: 9599,
+            port: 9527,
             hot: true
         },
         resolve: {
