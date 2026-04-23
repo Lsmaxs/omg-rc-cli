@@ -1,6 +1,7 @@
 .idea/
 .DS_Store
 .vscode
+.claude/
 node_modules/
 npm-debug.log
 npm-debug.log*
