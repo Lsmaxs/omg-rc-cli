@@ -46,8 +46,8 @@ module.exports = (env) => {
         },
         devServer: {
             before: ( app, server ) => {
-                app.get( '/react-example', async function ( req, res ) {
-                    let html = await readHtml( 'react-example' );
+                app.get( '/hot-react-example', async function ( req, res ) {
+                    let html = await readHtml( 'hot-react-example' );
                     res.send( html );
                 } );
                 app.get( '/scss-example', async function ( req, res ) {

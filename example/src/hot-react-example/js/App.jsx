@@ -1,10 +1,12 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 import '../style/index.scss';
+import Sub from './Sub';
+
 const App = () => (
   <h1>
     Hello, world.<br />
+    <Sub />
   </h1>
 );
 
-export default hot(module)(App);
+export default App;
