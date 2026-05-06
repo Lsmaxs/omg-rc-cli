@@ -2,7 +2,7 @@
 
 > 适用对象：使用 omg-rc-cli 的业务项目开发者
 > 最后更新：2026-04-22
-> CLI 最新版本：**2.0.1**
+> CLI 最新版本：**2.0.6**
 
 ---
 
@@ -71,7 +71,7 @@ git status
   },
   "devDependencies": {
 +   "http-proxy-middleware": "^2.0.9",
-    "omg-rc-cli": "^2.0.0"
+    "omg-rc-cli": "^2.0.6"
   }
 ```
 
@@ -83,7 +83,7 @@ git status
 ```diff
   "devDependencies": {
 -   "omg-rc-cli": "^1.x.x",
-+   "omg-rc-cli": "^2.0.1"
++   "omg-rc-cli": "^2.0.6"
   }
 ```
 
@@ -328,7 +328,7 @@ ls -la node_modules/omg-rc-cli
 # 应显示 symlink 指向本地仓库路径
 
 omg --version
-# 应显示 2.0.1
+# 应显示 2.0.6
 ```
 
 > **注意**：link 后对 omg-rc-cli 的任何修改会立即生效，无需重新安装。
